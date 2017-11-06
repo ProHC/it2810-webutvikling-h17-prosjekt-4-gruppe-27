@@ -1,4 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpModule } from '@angular/http';
+import { RouterTestingModule } from '@angular/router/testing';
+
+
 
 import { CompanySearchComponent } from './company-search.component';
 
@@ -8,7 +12,8 @@ describe('CompanySearchComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CompanySearchComponent ]
+      declarations: [ CompanySearchComponent ],
+      imports: [ HttpModule, RouterTestingModule ]
     })
     .compileComponents();
   }));
